@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="dresses e-commerce party-wear shopping clothes"
+    />
+    <!-- Link of Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+   
+    <!-- Styling Links -->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="icon" href="images/apple.png" />
+    
+    <link href="general.css" type="text/css" rel="stylesheet" />
+    <link href="queries.css" type="text/css" rel="stylesheet" /> 
+
+    <!-- this is a link of animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+
+    <title>Zoro-Dresses</title>
+  </head>
+  <body >
+    <div class="overlay"></div>
+    <header class="header">
+     
+        <button class="navigation-btn " aria-label="close icon">
+            <i class="menu-btn close fas fa-close"></i>
+        </button>
+        
+        <div class="logo--bars">
+            <button class="navigation-btn " aria-label="navigation open icon">
+                <i class="menu-btn open fas fa-bars"></i>
+            </button>
+            <div class="logo logo-hide" >
+                Zoro-Dresses
+            </div>
+        </div>
+        
+      <!-- log end here  -->
+      <!-- navigation start -->
+      <div class="main-navigation">
+        
+        <nav>
+        <ul class="main-navigation-list">
+           <li>
+            <div class="logo logo--inner ">
+                Zoro-Dresses
+            </div>
+           </li>
+          <li>
+            <a href="#" class="main-navigation-link nav-active">Collection</a>
+           </li>
+          </li>
+          <li><a href="#" class="main-navigation-link ">Men</a></li>
+          <li>
+            <a href="#" class="main-navigation-link">Women</a>
+          </li>
+          <li><a href="#" class="main-navigation-link">About</a></li>
+          <li>
+            <a href="#" class="main-navigation-link ">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cart-container" id="empty">
+        <p class="cart-name">Cart</p>
+        <div class="cart--line"></div>
+        <p class="cart--empty">Your cart is empty</p>
+      </div>
+      <div class="cart-container   " id="filled">
+        <p class="cart-name">Cart</p>
+        
+        <div class="cart--line"></div>
+       <div class="fill">
+         <div>
+         <img src="images/image-product1.avif" class="cart-thumbnail" alt="added item into cart"></div>
+         <div>
+         <p class="fill--cart"> Fall limited edition dresses</p>
+         <p class="price--cart"><span class="item--price" > &#36; 1025.00 </span><span class="multi">X </span> <span class="quantity">1</span>  &#36;<span class="total">  1025</span></p>
+        </div>
+        <div>
+         <img src="images/icon-delete.svg" class="delete" alt="delete icon to empty the cart">
+        </div>
+         
+       </div>
+      
+       <button class="button" aria-label="Checkout"><a class="checkout" href="#"> Checkout</a>
+       </button>
+
+        
+      </div>
+      <!-- cart and avatar  -->
+       <div class="cart--container">
+       
+          <a href="#" class="cart--link">
+            <img src="images/icon-cart.svg" class="cart cart--show" alt="cart image">
+            <span class="superscript">0</span>
+          </a>
+          <img src="images\image-avatar.png" class="avatar" alt=" current login user" />
+        
+       </div>
+      
+      </nav>
+     
+    </header>
+    <!-- line below header  -->
+    
+    <div class="line">
+     
+    </div>
+    
+    <!-- hero section  -->
+    <section class="hero-section">
+      <!-- hero container  -->
+      <div class="hero grid grid--two--col">
+            <!-- hero image  -->
+        <div class="hero-images ">
+         <div class="imgesss ">
+          <img src="images/image-product1.avif" class="hero-image slide mobile--slide " alt="dresses image" />
+          <img src="images/image-product2.avif" class="hero-image " alt="dresses image" />
+          <img src="images/image-product1.avif" class="hero-image   " alt="dresses image" />
+          <img src="images/image-product2.avif" class="hero-image  " alt="dresses image" />
+          <button class="arrow left--arrow" id="mobile--previous" aria-label="arrow icon">
+            <img src="images/icon-previous.svg" class="  previous" alt="previous icon">
+          </button>
+          <button class="arrow right--arrow" id="mobile--next" aria-label="arrow icon" >
+            <img src="images/icon-next.svg" class="next" alt="next icon">
+          </button>
+        </div>
+          <div class="images-container">
+            <img src="images/image-product1.avif"  class="image-1 thumbnail thumbnail-active" alt="dresses image thumbnail">
+            <img src="images/image-product2.avif"  class="image-2 thumbnail" alt="dresses image thumbnail">
+            <img src="images/image-product1.avif"  class="image-3 thumbnail" alt="dresses image thumbnail">
+            <img src="images/image-product2.avif"  class="image-4 thumbnail" alt="dresses image thumbnail">
+           
+          </div>
+          
+          <!-- pop up container  -->
+          <div class="img-container ">
+            <button class="closeBtn" aria-label="close icon">
+              <img src="images/icon-close.svg" class="  close" alt="close icon ">
+            </button>
+            <img src="images/image-product1.avif" class="overlay-img shown " alt="dresses image" />
+          <img src="images/image-product2.avif" class="overlay-img " alt="dresses image"/>
+          <img src="images/image-product1.avif" class="overlay-img " alt="dresses image" />
+          <img src="images/image-product2.avif" class="overlay-img " alt="dresses image"/>
+            <div class="images-container">
+              <img src="images/image-product1.avif"  class="image-1 overlay-thumb thumbnail-active"alt="dresses image thumbnail">
+              <img src="images/image-product2.avif"  class="image-2 overlay-thumb"alt="dresses image thumbnail">
+              <img src="images/image-product1.avif"  class="image-3 overlay-thumb"alt="dresses image thumbnail">
+              <img src="images/image-product2.avif"  class="image-4 overlay-thumb"alt="dresses image thumbnail">
+             
+            </div>
+            <button class="arrow left--arrow" id="arrow--previous" aria-label="arrow ">
+              <img src="images/icon-previous.svg" class="  previous" alt="previous icon">
+            </button>
+            <button class="arrow right--arrow" id="arrow--next" aria-label="arrow icon">
+              <img src="images/icon-next.svg" class="next" alt="next icon">
+            </button>
+          </div>
+          
+        </div>
+        <!-- hero text box  -->
+        <div class="hero-text-box">
+          <div class="padding-left">
+          <span class="subheading">Dresses company</span>
+          <h1 class="primary-heading">
+           Fall limited edition dressess
+          </h1>
+          <p class="hero-description">
+            Green and blue ethnic motifs print a-line dress Square neck Three-quarter, puff sleeve Gathered or pleated detail Maxi length in flounce hem Georgette fabric
+          </p>
+          <div class="mobile-active">
+<p class="price">&#36;1025.00 <span class="discount">50 &#37</span></p>
+<p class="old-price">  &#36;2500.00</p>
+</div>
+</div>
+<div class="action">
+<a href="#section-how" class="btn btn--right"><img src="images/icon-minus.svg" class="minus padding--right text--align" alt="minus icon to remove icon"><span class="number">0</span><img src="images/icon-plus.svg" class="plus padding--left" alt="plus icon to add item into cart"></a>
+          <a class="btn btn--left add--to" href="#cta"><img src="images/icon-cart.svg" class="cart" alt="cart icon" > <span class="add_to">Add to cart</span> </a>
+          
+          </div>
+            
+          </div>
+        
+        </div>
+       
+      </div>
+    
+      <div class="attribution">
+        Internship under <a href="https://codeclause.com/" target="_blank">CodeCaluse</a>. 
+        Coded by <a href="https://portfolio-harmanjot2002.vercel.app/">Harmanjot Kaur</a>.
+      </div>
+          </section>
+
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
